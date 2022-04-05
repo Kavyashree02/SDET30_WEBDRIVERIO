@@ -24,7 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/**/*.js'
+        //'./test/specs/**/*.js'
         // './test/specs/demoTestScript.js'
     ],
     // Patterns to exclude.
@@ -240,7 +240,7 @@ exports.config = {
      */
     //========================= beforeEach()
     beforeTest:async function (test, context) {
-        await lp.loginToApplication("admin", "admin")
+        //await lp.loginToApplication("http://localhost:8888/","admin", "admin")
 
         // await browser.url("http://localhost:8888/")
         // await $("//input[@name = 'user_name']").setValue("admin")

@@ -7,12 +7,12 @@ var pp = require("../../pageobjects/vtigerApplication/productsPage")
 describe('CampaignsModule', () => {
     it('createCampaign', async() => {
        await hp.clickOnProductsLnk()
-        await pp.Product()
-       await cpp.createProduct("Redmi")
+       await pp.Product()
+       await cpp.createProduct("Redmi1")
        await hp.clickOnMoreLnk()
        await hp.clickOnCampaignsLnk()
        await cp.clickOnCampLnk()
-       await ccp.createCampaign()
+       await ccp.createCampaign("Hello1")
         
     });
     

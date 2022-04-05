@@ -8,8 +8,8 @@ class createCampaignPage{
         return $("//input[@title='Save [Alt+S]']")
     }
 
-    async createCampaign(){
-        await this.campaignTextField.setValue("xgbddf")
+    async createCampaign(CampaignName){
+        await this.campaignTextField.setValue(CampaignName)
         await this.saveBtn.click()
     }
 

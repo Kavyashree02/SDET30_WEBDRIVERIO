@@ -13,7 +13,7 @@ class createOrgPage {
      
     //
     async createNewOrg(OrgName){
-        await this.createOrg.setValue(OrgName+Math.random())
+        await this.createOrg.setValue(OrgName)
         await this.saveBtn.click()
     } 
 

@@ -1,6 +1,6 @@
 class opportunities{
     get opportunitiesEdt(){
-        return ("//img[@alt='Create Opportunity...']")
+        return $("//img[@alt='Create Opportunity...']")
     }
 
     async opportunitiesLookUpImg(){
