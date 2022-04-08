@@ -20,19 +20,20 @@ class createOpportunity{
         return $("//input[@title='Save [Alt+S]']")
         }
 
- async createNewOpportunity(opportunityName)
+ async createNewOpportunity(OpportunityName)
  {
-     await this.orgEdtText.setValue(opportunityName+Math.random())
+     await this.opportEdtText.setValue(OpportunityName)
      await this.saveBtn.click()
  }
 
- async createOpportunityWithOrgName(opportunityName,OrgName){
-     await this.opportEdtText.setValue(opportunityName)
+ async createOpportunityWithOrgName(OpportunityName,OrgName){
+     await this.opportEdtText.waitForDisplayed()
+     await this.opportEdtText.setValue(OpportunityName)
      await this.relatedToLookUpImg.click()
      await browser.switchWindow("Accounts")
      await this.searchEdtText.setValue(OrgName)
      await this.searchBtn.click()
-     await browser.$(("//a[.='"+OrgName+"']")).click()
+     await browser.$("//a[.='"+OrgName+"']").click()
      //a[.='HDFC123']
      await browser.switchWindow("Potentials&action")
      await this.saveBtn.click()

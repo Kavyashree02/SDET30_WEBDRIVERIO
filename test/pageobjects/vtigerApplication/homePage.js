@@ -49,7 +49,7 @@ class HomePage {
     }
 
     async clickOnContactLnk(){
-        await this.clickOnContactLnk.waitForDisplayed()
+        await this.contactLnk.waitForDisplayed()
         await this.contactLnk.click()
     }
 

@@ -1,0 +1,30 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Can't call setValue on element with selector \"//input[@name='campaignname']\" because element wasn't found",
+      "children" : [ {
+        "name" : "createCampaign",
+        "uid" : "fe4355a6d01ec94b",
+        "parentUid" : "2fd7fd203a85727f058909b3fb4f9235",
+        "status" : "broken",
+        "time" : {
+          "start" : 1649404655569,
+          "stop" : 1649404686403,
+          "duration" : 30834
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "newPassed" : false,
+        "newBroken" : false,
+        "retriesCount" : 0,
+        "retriesStatusChange" : false,
+        "parameters" : [ "chrome-100.0.4896.75", "100.0.4896.75" ]
+      } ],
+      "uid" : "2fd7fd203a85727f058909b3fb4f9235"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

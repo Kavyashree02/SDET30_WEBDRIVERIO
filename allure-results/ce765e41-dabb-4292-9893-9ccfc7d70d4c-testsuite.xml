@@ -1,0 +1,24 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649404004475' stop='1649404040285'>
+    <name>ProductsModule</name>
+    <title>ProductsModule</title>
+    <test-cases>
+        <test-case start='1649404004586' status='passed' stop='1649404040270'>
+            <name>createProduct</name>
+            <title>createProduct</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-1'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.75'/>
+                <parameter kind='argument' name='browserVersion' value='100.0.4896.75'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='8f08ab36-3347-45f1-8518-aa5584bf16f5-attachment.mp4' type='video/mp4' size='125'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

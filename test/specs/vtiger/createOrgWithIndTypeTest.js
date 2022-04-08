@@ -2,6 +2,8 @@
 var hp = require("../../pageobjects/vtigerApplication/homePage")
 var op = require("../../pageobjects/vtigerApplication/organizationPage")
 var cop = require("../../pageobjects/vtigerApplication/createOrganizationPage")
+var excelData = require("../../../genericUtility/excelUtility")
+var ran = require("../../../genericUtility/webDriverUtility")
 
 describe('OrganizationModule', () => {
     it('orgWithIndType', async() => {
@@ -10,7 +12,8 @@ describe('OrganizationModule', () => {
         //await browser.back()
         //await browser.forward()
         await op.clickOnCreateOrgLookUpImg()
-        await cop.createOrgWithIndDropDwn("ICICI", "Telecommunications") 
+        var excelArray= excelData("./projectData.xlsx", "OrgName")
+        await cop.createOrgWithIndDropDwn(excelArray[0].orgName+ran(), excelArray[0].Industry) 
 
         //org verification
         

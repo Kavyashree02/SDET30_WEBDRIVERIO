@@ -13,6 +13,13 @@ class createCampaignPage{
         await this.saveBtn.click()
     }
 
+    async createCampWithProduct(CampaignName,ProductName){
+        await this.campaignTextField.setValue(CampaignName)
+        
+        await this.saveBtn.click()
+
+    }
+
 }
 
 module.exports = new createCampaignPage() 

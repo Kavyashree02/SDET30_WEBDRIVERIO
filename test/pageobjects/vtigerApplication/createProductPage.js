@@ -9,7 +9,7 @@ class createProd{
     }
 
     async createProduct(ProductName){
-        await this.product.setValue(ProductName+Math.random())
+        await this.product.setValue(ProductName)
         await this.saveBtn.click()
     }
 

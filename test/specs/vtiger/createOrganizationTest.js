@@ -1,16 +1,19 @@
 //const { assert } = require("chai");
 
-var hp = require("../../pageobjects/vtigerApplication/homePage")
-var op = require("../../pageobjects/vtigerApplication/organizationPage")
-var cop = require("../../pageobjects/vtigerApplication/createOrganizationPage")
-let excelData = require("../../../genericUtility/excelUtility")
+let hp = require("../../pageobjects/vtigerApplication/homePage")
+let op = require("../../pageobjects/vtigerApplication/organizationPage")
+let cop = require("../../pageobjects/vtigerApplication/createOrganizationPage")
+let excelData = require("../../../genericUtility/excelUtility");
+let ran = require("../../../genericUtility/webDriverUtility")
+
 
 describe('organizationModule', () => {
     it('createOrganization', async() => {
         await hp.clickOnOrganizationLnk()  
         await op.clickOnCreateOrgLookUpImg()
-        await cop.createNewOrg("SBI")
-       
+        var excelArray= excelData("./projectData.xlsx", "OrgName")
+        await cop.createNewOrg(excelArray[1].orgName+ran())
+               
     });
     
 });

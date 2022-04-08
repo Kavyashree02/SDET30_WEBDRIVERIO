@@ -1,6 +1,8 @@
 let hp = require("./test/pageobjects/vtigerApplication/homePage")
 let lp = require("./test/pageobjects/vtigerApplication/loginPage")
 
+const video = require('wdio-video-reporter');
+
 exports.config = {
     //
     // ====================
@@ -26,7 +28,19 @@ exports.config = {
     specs: [
         //'./test/specs/**/*.js'
         // './test/specs/demoTestScript.js'
+        // './test/specs/vtiger/createContactTest.js',
+        './test/specs/vtiger/createCampaign.js'
+
+        //distributed Parallel Execution
+        // './test/specs/vtiger/createCampaign.js','./test/specs/vtiger/createProductTest.js',['./test/specs/vtiger/createContactTest.js','./test/specs/vtiger/createOpportunitiesTest.js']
     ],
+
+    //SUITES
+    suites:{
+        smokeSuite: ['./test/specs/vtiger/createCampaign.js','./test/specs/vtiger/createProductTest.js'],
+        regressionSuite: ['./test/specs/vtiger/createContactTest.js', './test/specs/vtiger/createOpportunitiesTest.js']
+    },
+    
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -68,7 +82,19 @@ exports.config = {
                 // excludeDriverLogs: ['*'], // pass '*' to exclude all driver session logs
                 // excludeDriverLogs: ['bugreport', 'server'],
         },
-    // {maxInstances : 1,browserName : "firefox"}
+        // {
+        //     maxInstances: 1,
+        //     browserName: 'firefox', 
+        //     acceptInsecureCerts: true           
+        // },
+
+        // {
+        //     maxInstances: 1,
+        //     browserName: 'edge', 
+        //     acceptInsecureCerts: true           
+        // }
+
+    
     ],
     //
     // ===================
@@ -117,7 +143,11 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    services: ['chromedriver'],
+    services: [
+        ['chromedriver'] ,
+    // ['selenium-standalone']
+],
+
     
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
@@ -139,16 +169,26 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',
+    [video, {
+        saveAllVideos: false,       // If true, also saves videos for successful test cases
+        videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
+      }],
 
+    ['allure', {
+        outputDir: '_results_/allure-raw',
+        disableWebdriverStepsReporting: true,
+        disableWebdriverScreenshotsReporting: false,
+    }]
 
+],
     
     //
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 80000
+        timeout: 99999999
     },
     //
     // =====
@@ -240,7 +280,7 @@ exports.config = {
      */
     //========================= beforeEach()
     beforeTest:async function (test, context) {
-        //await lp.loginToApplication("http://localhost:8888/","admin", "admin")
+        await lp.loginToApplication("http://localhost:8888/","admin", "admin")
 
         // await browser.url("http://localhost:8888/")
         // await $("//input[@name = 'user_name']").setValue("admin")
@@ -273,7 +313,10 @@ exports.config = {
     //====================== afterEach()
     afterTest:async function(test, context, { error, result, duration, passed, retries }) {
         await hp.logoutFromApplication()
-        console.log("logout from the apllication");
+        if (error) {
+            browser.takeScreenshot();
+          }
+       // console.log("logout from the application");
     },
 
 

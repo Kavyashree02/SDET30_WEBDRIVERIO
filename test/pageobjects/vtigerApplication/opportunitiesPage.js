@@ -3,7 +3,7 @@ class opportunities{
         return $("//img[@alt='Create Opportunity...']")
     }
 
-    async opportunitiesLookUpImg(){
+    async clickOnOpportLookUpImg(){
         await this.opportunitiesEdt.click()
     }
 

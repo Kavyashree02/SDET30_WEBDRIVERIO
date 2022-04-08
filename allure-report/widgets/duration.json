@@ -1,0 +1,21 @@
+[ {
+  "uid" : "7af5c5932822347a",
+  "name" : "createProduct",
+  "time" : {
+    "start" : 1649404694095,
+    "stop" : 1649404726093,
+    "duration" : 31998
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe4355a6d01ec94b",
+  "name" : "createCampaign",
+  "time" : {
+    "start" : 1649404655569,
+    "stop" : 1649404686403,
+    "duration" : 30834
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

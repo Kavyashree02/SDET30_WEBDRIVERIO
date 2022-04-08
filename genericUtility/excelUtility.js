@@ -44,7 +44,12 @@ return derivedData
 
 // console.log(derivedData[0].password);
 }
-// let data = readDataFromExcel('./projectData.xlsx', 'Sheet1')
+// let data = readDataFromExcel('./projectData.xlsx', 'Opportunities')
 // console.log(data);
+
+// let data2 = readDataFromExcel('./projectData.xlsx', 'OrgName')
+// console.log(data2);
+
+
 
 module.exports = readDataFromExcel

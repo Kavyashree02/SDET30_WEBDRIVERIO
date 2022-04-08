@@ -1,0 +1,143 @@
+{
+  "uid" : "fe4355a6d01ec94b",
+  "name" : "createCampaign",
+  "fullName" : "CampaignsModule.createCampaign",
+  "historyId" : "4eb8d6f5f666575dee7c818e4ed80e0e",
+  "time" : {
+    "start" : 1649404655569,
+    "stop" : 1649404686403,
+    "duration" : 30834
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Can't call setValue on element with selector \"//input[@name='campaignname']\" because element wasn't found",
+  "statusTrace" : "Error: Can't call setValue on element with selector \"//input[@name='campaignname']\" because element wasn't found\n                    at implicitWait (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\node_modules\\webdriverio\\build\\utils\\implicitWait.js:34:19)\n                    at Element.elementErrorHandlerCallbackFn (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\node_modules\\webdriverio\\build\\middlewares.js:20:29)\n                    at Element.wrapCommandFn (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at createCampaignPage.createCampaign (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\test\\pageobjects\\vtigerApplication\\/createCampaignPage.js:12:9)\n                    at Context.<anonymous> (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\test\\specs\\vtiger\\/createCampaign.js:14:9)",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Can't call setValue on element with selector \"//input[@name='campaignname']\" because element wasn't found",
+    "statusTrace" : "Error: Can't call setValue on element with selector \"//input[@name='campaignname']\" because element wasn't found\n                    at implicitWait (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\node_modules\\webdriverio\\build\\utils\\implicitWait.js:34:19)\n                    at Element.elementErrorHandlerCallbackFn (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\node_modules\\webdriverio\\build\\middlewares.js:20:29)\n                    at Element.wrapCommandFn (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\node_modules\\@wdio\\utils\\build\\shim.js:137:29)\n                    at createCampaignPage.createCampaign (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\test\\pageobjects\\vtigerApplication\\/createCampaignPage.js:12:9)\n                    at Context.<anonymous> (C:\\Users\\Kavyashree\\Desktop\\SDET_30_WebdriverIO\\test\\specs\\vtiger\\/createCampaign.js:14:9)",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dfa4b4a2cb098d2e",
+      "name" : "Screenshot",
+      "source" : "dfa4b4a2cb098d2e.png",
+      "type" : "image/png",
+      "size" : 182059
+    }, {
+      "uid" : "193e4a16ce0e2f5a",
+      "name" : "Screenshot",
+      "source" : "193e4a16ce0e2f5a.png",
+      "type" : "image/png",
+      "size" : 182059
+    }, {
+      "uid" : "fd34ad2bd2414d11",
+      "name" : "Screenshot",
+      "source" : "fd34ad2bd2414d11.png",
+      "type" : "image/png",
+      "size" : 182029
+    }, {
+      "uid" : "55ac1309d18dd583",
+      "name" : "Screenshot",
+      "source" : "55ac1309d18dd583.png",
+      "type" : "image/png",
+      "size" : 183484
+    }, {
+      "uid" : "e9637f53e9c32980",
+      "name" : "Screenshot",
+      "source" : "e9637f53e9c32980.png",
+      "type" : "image/png",
+      "size" : 183484
+    }, {
+      "uid" : "6cfeb5517d9649eb",
+      "name" : "Screenshot",
+      "source" : "6cfeb5517d9649eb.png",
+      "type" : "image/png",
+      "size" : 183601
+    }, {
+      "uid" : "c9eb67fddf95e1f0",
+      "name" : "Screenshot",
+      "source" : "c9eb67fddf95e1f0.png",
+      "type" : "image/png",
+      "size" : 108088
+    }, {
+      "uid" : "c565222c8060898e",
+      "name" : "Screenshot",
+      "source" : "c565222c8060898e.png",
+      "type" : "image/png",
+      "size" : 135442
+    }, {
+      "uid" : "9dcdfad763026afd",
+      "name" : "Screenshot",
+      "source" : "9dcdfad763026afd.png",
+      "type" : "image/png",
+      "size" : 156628
+    }, {
+      "uid" : "a49b8c854b1d34e2",
+      "name" : "Execution video",
+      "source" : "a49b8c854b1d34e2.mp4",
+      "type" : "video/mp4",
+      "size" : 66939
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "CampaignsModule"
+  }, {
+    "name" : "testClass",
+    "value" : "CampaignsModule"
+  }, {
+    "name" : "testMethod",
+    "value" : "createCampaign"
+  }, {
+    "name" : "package",
+    "value" : "CampaignsModule"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome-100.0.4896.75"
+  }, {
+    "name" : "browserVersion",
+    "value" : "100.0.4896.75"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fe4355a6d01ec94b.json",
+  "parameterValues" : [ "chrome-100.0.4896.75", "100.0.4896.75" ]
+}

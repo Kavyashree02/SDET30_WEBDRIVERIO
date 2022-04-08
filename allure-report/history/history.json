@@ -1,0 +1,41 @@
+{
+  "4eb8d6f5f666575dee7c818e4ed80e0e" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fe4355a6d01ec94b",
+      "status" : "broken",
+      "statusDetails" : "Can't call setValue on element with selector \"//input[@name='campaignname']\" because element wasn't found",
+      "time" : {
+        "start" : 1649404655569,
+        "stop" : 1649404686403,
+        "duration" : 30834
+      }
+    } ]
+  },
+  "1aab3aff246cc086f17f8b7b57c889f8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7af5c5932822347a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649404694095,
+        "stop" : 1649404726093,
+        "duration" : 31998
+      }
+    } ]
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649404655486' stop='1649404686415'>
+    <name>CampaignsModule</name>
+    <title>CampaignsModule</title>
+    <test-cases>
+        <test-case start='1649404655569' status='broken' stop='1649404686403'>
+            <name>createCampaign</name>
+            <title>createCampaign</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.75'/>
+                <parameter kind='argument' name='browserVersion' value='100.0.4896.75'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='5fb28dd9-3bfd-46b5-a961-83c33687c515-attachment.png' type='image/png' size='182059'/>
+                <attachment title='Screenshot' source='a2f0b228-968d-44aa-bf52-d62fb6a09f0d-attachment.png' type='image/png' size='182059'/>
+                <attachment title='Screenshot' source='2ca46621-f470-41ec-a09c-e5cb671f1844-attachment.png' type='image/png' size='182029'/>
+                <attachment title='Screenshot' source='a7125327-bb3e-401d-9cfb-a4ba5ac4dc15-attachment.png' type='image/png' size='183484'/>
+                <attachment title='Screenshot' source='99a08c70-eb5d-4f8e-9899-6a245b7c8d41-attachment.png' type='image/png' size='183484'/>
+                <attachment title='Screenshot' source='c024219b-be60-4bc1-9b4d-8a5c721d9e98-attachment.png' type='image/png' size='183601'/>
+                <attachment title='Screenshot' source='df198f1b-23a7-46b5-ab8d-557fae04a9dc-attachment.png' type='image/png' size='108088'/>
+                <attachment title='Screenshot' source='a9412d83-26d4-45a5-a5be-d6f55d3f9574-attachment.png' type='image/png' size='135442'/>
+                <attachment title='Screenshot' source='72984fd2-ced7-45eb-8d03-e5c7dea73374-attachment.png' type='image/png' size='156628'/>
+                <attachment title='Execution video' source='729d7355-3fac-44ac-a22b-7804430fb8b9-attachment.mp4' type='video/mp4' size='127'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "//input[@name='campaignname']" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "//input[@name='campaignname']" because element wasn't found
+                    at implicitWait (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at Element.wrapCommandFn (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at createCampaignPage.createCampaign (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\pageobjects\vtigerApplication\/createCampaignPage.js:12:9)
+                    at Context.&lt;anonymous> (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\specs\vtiger\/createCampaign.js:14:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

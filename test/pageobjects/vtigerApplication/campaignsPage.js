@@ -3,7 +3,7 @@ class campaignsPage{
         return $("//img[@alt='Create Campaign...']")
     }
 
-    async clickOnCampLnk(){
+    async clickOnCampLookUpImg(){
         await this.createCampaign.click()
     }
 

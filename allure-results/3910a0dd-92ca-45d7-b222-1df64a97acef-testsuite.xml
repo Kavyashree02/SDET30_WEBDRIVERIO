@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649404411075' stop='1649404443809'>
+    <name>CampaignsModule</name>
+    <title>CampaignsModule</title>
+    <test-cases>
+        <test-case start='1649404411166' status='broken' stop='1649404443795'>
+            <name>createCampaign</name>
+            <title>createCampaign</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.75'/>
+                <parameter kind='argument' name='browserVersion' value='100.0.4896.75'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Execution video' source='c8205211-cfe4-4883-9eea-7d1b3ed53511-attachment.mp4' type='video/mp4' size='127'/>
+            </attachments>
+            <failure>
+                <message>Can't call setValue on element with selector "//input[@name='campaignname']" because element wasn't found</message>
+                <stack-trace>Error: Can't call setValue on element with selector "//input[@name='campaignname']" because element wasn't found
+                    at implicitWait (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at Element.wrapCommandFn (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at createCampaignPage.createCampaign (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\pageobjects\vtigerApplication\/createCampaignPage.js:12:9)
+                    at Context.&lt;anonymous> (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\specs\vtiger\/createCampaign.js:14:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

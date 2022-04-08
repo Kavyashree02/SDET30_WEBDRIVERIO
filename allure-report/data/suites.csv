@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Apr 08 13:28:14 IST 2022","Fri Apr 08 13:28:46 IST 2022","31998","","ProductsModule","","ProductsModule","createProduct","createProduct",""
+"broken","Fri Apr 08 13:27:35 IST 2022","Fri Apr 08 13:28:06 IST 2022","30834","","CampaignsModule","","CampaignsModule","createCampaign","createCampaign",""

@@ -18,7 +18,7 @@ class createOrgPage {
     } 
 
     async createOrgWithIndDropDwn(OrgName, Industry){
-        await this.createOrg.setValue(OrgName+Math.random())
+        await this.createOrg.setValue(OrgName)
         //await this.industryDropDwn.selectByIndex(Industry)
         await this.industryDropDwn.selectByAttribute("value",Industry)
         await this.saveBtn.click()
