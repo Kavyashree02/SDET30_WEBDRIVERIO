@@ -10,7 +10,7 @@ describe('CampaignsModule', () => {
 
         await hp.clickOnMoreLnk()
         await hp.clickOnCampaignsLnk()
-        await cp.clickOnCampLookUpImg
+        await cp.clickOnCampLookUpImg()
         await ccp.createCampaign(excelArray[0].CampaignName+ran())
         
     });
