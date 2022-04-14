@@ -1,0 +1,34 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649825250154' stop='1649825267664'>
+    <name>CalendarPopUp</name>
+    <title>CalendarPopUp</title>
+    <test-cases>
+        <test-case start='1649825250438' status='broken' stop='1649825267650'>
+            <name>selectCurrentDate</name>
+            <title>selectCurrentDate</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+                <parameter kind='argument' name='browserVersion' value='100.0.4896.88'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='4f904b82-8d3d-4f61-b415-844e5038777c-attachment.png' type='image/png' size='8715'/>
+                <attachment title='Screenshot' source='c0e6b755-4125-4b13-ae2a-4ba2692ea776-attachment.png' type='image/png' size='43646'/>
+                <attachment title='Screenshot' source='a415b095-cee8-4380-ad25-211a7976992e-attachment.png' type='image/png' size='43646'/>
+                <attachment title='Screenshot' source='6da5ecea-17bc-4c6b-84e2-d350e6427e71-attachment.png' type='image/png' size='54973'/>
+                <attachment title='Execution video' source='4100568d-68a5-44a4-bf91-31daacb571ca-attachment.mp4' type='video/mp4' size='128'/>
+            </attachments>
+            <failure>
+                <message>date is not defined</message>
+                <stack-trace>ReferenceError: date is not defined
+                    at Context.&lt;anonymous> (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\specs\/calendar.js:11:13)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

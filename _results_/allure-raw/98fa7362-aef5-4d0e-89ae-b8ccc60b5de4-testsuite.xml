@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649843024529' stop='1649843064986'>
+    <name>image</name>
+    <title>image</title>
+    <test-cases>
+        <test-case start='1649843024533' status='broken' stop='1649843064984'>
+            <name>imageCapture</name>
+            <title>imageCapture</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element[img].click is not a function</message>
+                <stack-trace>TypeError: element[img].click is not a function
+                    at Context.&lt;anonymous> (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\specs\XPath\/image.js:12:32)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

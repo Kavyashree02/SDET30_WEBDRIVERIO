@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649825008415' stop='1649825076242'>
+    <name>CampaignsModule</name>
+    <title>CampaignsModule</title>
+    <test-cases>
+        <test-case start='1649825008513' status='passed' stop='1649825076239'>
+            <name>createCampaign</name>
+            <title>createCampaign</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+                <parameter kind='argument' name='browserVersion' value='100.0.4896.88'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='c3a605c8-20d6-4af5-a603-cb0dcc3430d3-attachment.png' type='image/png' size='182059'/>
+                <attachment title='Screenshot' source='ab206720-2944-4cea-813c-f74aa78809aa-attachment.png' type='image/png' size='182059'/>
+                <attachment title='Screenshot' source='43e803ee-da20-4920-9b6b-0a34e5201fba-attachment.png' type='image/png' size='182029'/>
+                <attachment title='Screenshot' source='c53e48ef-cf66-482e-af8f-86d9e79a2da8-attachment.png' type='image/png' size='183484'/>
+                <attachment title='Screenshot' source='45696c86-482d-47d4-9186-45075d39d3cc-attachment.png' type='image/png' size='183484'/>
+                <attachment title='Screenshot' source='d3543fc7-b43a-4405-8c82-d442ef766ba8-attachment.png' type='image/png' size='183601'/>
+                <attachment title='Screenshot' source='a1c39634-e15b-4f4e-8216-739366a4255d-attachment.png' type='image/png' size='108083'/>
+                <attachment title='Screenshot' source='5daa2572-21d8-4fa3-b405-7bcf33dca535-attachment.png' type='image/png' size='135449'/>
+                <attachment title='Screenshot' source='de9fc9ea-fe23-4c1c-bbb6-0959a01d73a3-attachment.png' type='image/png' size='156401'/>
+                <attachment title='Screenshot' source='0e865c61-957e-49dc-8652-0905b76bcb3c-attachment.png' type='image/png' size='113568'/>
+                <attachment title='Screenshot' source='f50775db-3fde-4928-bbf0-89b954f272ee-attachment.png' type='image/png' size='113568'/>
+                <attachment title='Screenshot' source='c9a356d5-0257-4367-9253-e78b28b4fd0c-attachment.png' type='image/png' size='114532'/>
+                <attachment title='Screenshot' source='3b3d5b8a-8325-46be-b81d-ae0449f16058-attachment.png' type='image/png' size='126391'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

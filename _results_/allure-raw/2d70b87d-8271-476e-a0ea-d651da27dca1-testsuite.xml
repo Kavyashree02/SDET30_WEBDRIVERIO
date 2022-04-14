@@ -1,0 +1,27 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649835643233' stop='1649835662244'>
+    <name>xpath</name>
+    <title>xpath</title>
+    <test-cases>
+        <test-case start='1649835643235' status='broken' stop='1649835662239'>
+            <name>checkBox</name>
+            <title>checkBox</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>element.click is not a function</message>
+                <stack-trace>TypeError: element.click is not a function
+                    at Context.&lt;anonymous> (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\specs\XPath\/xpathConact.js:15:27)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

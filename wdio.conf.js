@@ -1,7 +1,7 @@
 let hp = require("./test/pageobjects/vtigerApplication/homePage")
 let lp = require("./test/pageobjects/vtigerApplication/loginPage")
 
-const video = require('wdio-video-reporter');
+// const video = require('wdio-video-reporter');
 
 exports.config = {
     //
@@ -90,7 +90,7 @@ exports.config = {
 
         // {
         //     maxInstances: 1,
-        //     browserName: 'edge', 
+        //     browserName: 'Microsoft Edge', 
         //     acceptInsecureCerts: true           
         // }
 
@@ -170,10 +170,10 @@ exports.config = {
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
     reporters: ['spec',
-    [video, {
-        saveAllVideos: false,       // If true, also saves videos for successful test cases
-        videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
-      }],
+    // [video, {
+    //     saveAllVideos: false,       // If true, also saves videos for successful test cases
+    //     videoSlowdownMultiplier: 3, // Higher to get slower videos, lower for faster videos [Value 1-100]
+    //   }],
 
     ['allure', {
         outputDir: '_results_/allure-raw',
@@ -252,6 +252,7 @@ exports.config = {
         global.wdioExpect = global.expect;
         const chai = require('chai');
         global.expect = chai.expect;
+        
 
         //custom commands
         browser.addCommand('getUrlAndTitle', async function (customVar) {
@@ -280,7 +281,7 @@ exports.config = {
      */
     //========================= beforeEach()
     beforeTest:async function (test, context) {
-        await lp.loginToApplication("http://localhost:8888/","admin", "admin")
+        // await lp.loginToApplication("http://localhost:8888/","admin", "admin")
 
         // await browser.url("http://localhost:8888/")
         // await $("//input[@name = 'user_name']").setValue("admin")

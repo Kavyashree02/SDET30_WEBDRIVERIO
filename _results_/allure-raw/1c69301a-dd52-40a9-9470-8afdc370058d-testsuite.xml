@@ -1,0 +1,26 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1649844192786' stop='1649844221184'>
+    <name>image</name>
+    <title>image</title>
+    <test-cases>
+        <test-case start='1649844192787' status='passed' stop='1649844221148'>
+            <name>imageCapture</name>
+            <title>imageCapture</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.88'/>
+            </parameters>
+            <steps/>
+            <attachments>
+                <attachment title='Screenshot' source='a8a62b40-6ea8-4e74-8f76-71f8009f3ee2-attachment.png' type='image/png' size='4228'/>
+                <attachment title='Screenshot' source='a761b82b-cf8a-4c9c-82d3-03202823de4c-attachment.png' type='image/png' size='2262'/>
+                <attachment title='Screenshot' source='528e29b3-605f-44fe-af96-30bd17d30a04-attachment.png' type='image/png' size='4549'/>
+                <attachment title='Screenshot' source='e3a20499-8932-44f7-8d95-ba0ac55ce886-attachment.png' type='image/png' size='3208'/>
+            </attachments>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
