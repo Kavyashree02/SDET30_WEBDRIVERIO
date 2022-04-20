@@ -7,11 +7,13 @@ let excelData = require("../../../genericUtility/excelUtility")
 let ran = require("../../../genericUtility/webDriverUtility")
 
 
-let  orgName = excelData('./projectData.xlsx', 'OrgName')
-let opporName = excelData('./projectData.xlsx', 'Opportunities')
+let orgName = require("../../../test/data/orgName.json")
+let opporName = require("../../../test/")
+// let  orgName = excelData('./projectData.xlsx', 'OrgName')
+// let opporName = excelData('./projectData.xlsx', 'Opportunities')
 
-console.log(orgName[0].orgName+ran());
-console.log(opporName[0].OpportunityName);
+// console.log(orgName[0].orgName+ran());
+// console.log(opporName[0].OpportunityName);
 
 
 describe('Opportunities', () => {
@@ -25,8 +27,8 @@ describe('Opportunities', () => {
         await createOrg.createNewOrg(orgName[0].orgName+ran())
         await hp.clickOnOpportunitiesLnk()
         await op.clickOnOpportLookUpImg()
-        let oppName=opporName[0].OpportunityName
-        let org =orgName[0].orgName+ran()
+        // let oppName=opporName[0].OpportunityName
+        // let org =orgName[0].orgName+ran()
         // console.log("===============name_oppertunity=================="+opporName[0].OpportunityName);
         await cop.createOpportunityWithOrgName(oppName,org)
       
