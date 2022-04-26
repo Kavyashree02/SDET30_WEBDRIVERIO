@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1650528579292' stop='1650528644927'>
+    <name>Opportunities</name>
+    <title>Opportunities</title>
+    <test-cases>
+        <test-case start='1650528579293' status='broken' stop='1650528644870'>
+            <name>createOpportunitiesWithOrgName</name>
+            <title>createOpportunitiesWithOrgName</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-100.0.4896.127'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Can't call click on element with selector "//a[.='undefined']" because element wasn't found</message>
+                <stack-trace>Error: Can't call click on element with selector "//a[.='undefined']" because element wasn't found
+                    at implicitWait (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\webdriverio\build\utils\implicitWait.js:34:19)
+                    at Element.elementErrorHandlerCallbackFn (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\webdriverio\build\middlewares.js:20:29)
+                    at Element.wrapCommandFn (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:29)
+                    at createOpportunityWithOrgName (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\pageobjects\vtigerApplication\/createOpportunitiesPage.js:36:6)
+                    at Context.&lt;anonymous> (C:\Users\Kavyashree\Desktop\SDET_30_WebdriverIO\test\specs\vtiger\/createOpportunityWithOrgTest.js:33:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

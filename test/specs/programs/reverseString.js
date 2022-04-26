@@ -9,10 +9,14 @@ let str = "Hello"
 //     console.log(strArray);              //[ 'o', 'l', 'l', 'e', 'H' ]
 
   
-let strArray = ""
+// let strArray = ""
 
 for (let index = str.length-1; index >=0; index--) {   //olleH 
     
     console.log(str[index]);
     }
     
+// for (let index = str.length-1; index >=0; index--) {
+//     console.log(str.charAt(index));
+    
+// }
